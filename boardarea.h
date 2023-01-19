@@ -12,9 +12,12 @@ public:
     explicit BoardArea(QWidget *parent = nullptr);
     QSize sizeHint() const override;
     QSize minimumSizeHint() const override;
-    void putNumber(int row, int col, int aNumber);
+    void clearBoard();
 
     bool checkAllZero();
+
+public slots:
+    void putNumber(int row, int col, int aNumber);
 
 signals:
 

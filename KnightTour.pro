@@ -12,12 +12,14 @@ SOURCES += \
     boardarea.cpp \
     knighttoursolver.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    solverthread.cpp
 
 HEADERS += \
     boardarea.h \
     knighttoursolver.h \
-    mainwindow.h
+    mainwindow.h \
+    solverthread.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

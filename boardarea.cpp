@@ -25,6 +25,17 @@ QSize BoardArea::minimumSizeHint() const
 void BoardArea::putNumber(int row, int col, int aNumber)
 {
     mNumbers[row][col] = aNumber;
+    update();
+}
+
+void BoardArea::clearBoard()
+{
+    for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            mNumbers[i][j] = 0;
+        }
+    }
+    update();
 }
 
 bool BoardArea::checkAllZero()
